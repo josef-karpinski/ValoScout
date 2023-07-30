@@ -10,7 +10,7 @@ api_key = ""
 riot_ids = [("kPin","2875"),
             ("stan","88888"),
             ("Poseidon","2411"),
-            ("DRAINGANGjboogie","drain"),
+            ("jboogie","drain"),
             ("joe","zzzzz")
             ]
 
