@@ -1,5 +1,4 @@
 from copy import deepcopy
-import scrape_trngg as trn
 
 MATCH_DTO = {
     "matchInfo": {},

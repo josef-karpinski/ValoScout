@@ -1,4 +1,3 @@
-import scrape_trngg as trn
 import trn_api_to_riot_api as trn2riot
 import json
 from datetime import datetime, timedelta, timezone
