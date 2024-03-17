@@ -1,0 +1,6 @@
+# Use the command:
+# pip install -r requirements.txt
+# to install these requirements
+
+pyautogui
+pyperclip
