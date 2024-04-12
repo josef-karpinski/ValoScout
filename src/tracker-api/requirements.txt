@@ -3,3 +3,4 @@
 # to install these requirements
 
 cloudscraper
+flask
