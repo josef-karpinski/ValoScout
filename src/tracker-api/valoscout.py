@@ -63,14 +63,17 @@ def team_scout():
         min_num_players = min(len(riot_ids_compact), 5)
     
     if min_num_players < 0 or min_num_players > 5:
-        print("fart")
         return f"Invalid parameter: 'min-num-players' needs to be a positive integer value in range [0,5], inclusive", 400
     if min_num_players > len(riot_ids_compact):
-        print("fart")
         return f"Invalid parameter: 'min-num-players' is greater than the number of riot-ids specified", 400
-
+    print(riot_ids_compact)
+    print(riot_ids_split)
+    print(maps)
+    print(time_frame_days)
+    print(min_num_players)
     # Main API Functionality
     match_ids = scrape.get_valid_match_ids(riot_ids=riot_ids_split, min_num_players=min_num_players, time_frame_days=time_frame_days)
+    print(match_ids)
     match_data = scrape.get_match_data(match_ids=match_ids)
     match_stats = stats.get_all_stats(match_data=match_data, match_ids=match_ids, riot_ids=riot_ids_compact, map_names=maps)
 
